@@ -1,0 +1,16 @@
+use library WrapInterface;
+use library WrapSystemCollections;
+
+public Main() as interface {
+Button@[
+  Align:"up-center";
+  Text:"" + res string:"A.string.buttonHello";
+  ID:"A.id" + @buttonHello;
+  ]
+}
+
+public Main(function Main()) as activity {
+  pair object(A.id.buttonHello){
+    actionMenu(string:"" + res string:"A.string.hello");
+  }
+}
